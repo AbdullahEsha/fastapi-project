@@ -1,0 +1,88 @@
+<!-- filepath @view\emailTemplate.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forgot Password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Fallback for email clients that ignore inline styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .header h1 {
+        font-size: 24px;
+        color: #333333;
+      }
+      .content {
+        padding: 20px;
+        text-align: center;
+        line-height: 1.6;
+        color: #555555;
+      }
+      .content a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: #ffffff;
+        border-radius: 5px;
+        font-weight: bold;
+        border: 1px solid #555555;
+      }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #aaaaaa;
+      }
+      .footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Password Reset Request</h1>
+      </div>
+      <div class="content">
+        <p>
+          You recently requested to reset your password. Click the button below
+          to reset it.
+        </p>
+        <a href="{{url}}/reset-password?token={{token}}&email={{email}}">
+          Reset Password
+        </a>
+        <p>If you didn't request this, you can safely ignore this email.</p>
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0" />
+        <p>
+          If you have trouble clicking the button, copy and paste the URL below
+          into your web browser:
+        </p>
+        <p style="word-break: break-word; color: #555555">
+          {{url}}/reset-password?token={{token}}&email={{email}}
+        </p>
+      </div>
+      <div class="footer">
+        <p>©{{current_year}} YourAppName. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

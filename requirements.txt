@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+psycopg2
+python-dotenv
+sqlalchemy
+alembic
+schemas
+pydantic
+PyJWT
+pydantic[email]
+passlib
+passlib[bcrypt]
+fastapi_mail
+jinja2
