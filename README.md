@@ -143,9 +143,7 @@ PG_PASSWORD=mypassword
 
 With this setup, you now use SQLAlchemy for ORM operations and Alembic for migrations, ensuring an efficient and maintainable database structure. -->
 
-Here's the updated **README.md** that incorporates the SQLAlchemy and Alembic setup for database management:
 
-````markdown
 # FastAPI Project Setup Guide
 
 This guide provides step-by-step instructions to set up and run the FastAPI project.
@@ -441,8 +439,5 @@ fastapi-project/
 
 For any issues or contributions, feel free to raise an issue or submit a pull request.
 
-```
-
 This README.md now includes the SQLAlchemy and Alembic setup while maintaining the other project features. Let me know if you need further refinements!
-```
-````
+
